@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2021_05_07_144738) do
     t.integer "player_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "type"
+    t.string "report_type"
     t.index ["player_id"], name: "index_reports_on_player_id"
   end
 
