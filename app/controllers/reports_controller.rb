@@ -3,7 +3,8 @@ class ReportsController < ApplicationController
 
   # GET /reports
   def index
-    @reports = Report.all
+    player = Player.find(params['player_id'])
+    @reports = player.reports
 
     render json: @reports
   end
@@ -36,6 +37,8 @@ class ReportsController < ApplicationController
   # DELETE /reports/1
   def destroy
     @report.destroy
+
+    render json: @report
   end
 
   private
