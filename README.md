@@ -1,24 +1,27 @@
-# README
+## README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Toxic players allows users to report and keep track of any toxic or offensive actions taken by other players accross any game. The search funcion and ease of adding reports makes it an effective tool to identify players who are poor members of the gaming community. This is the back end for the toxic-players application. The front end is located at https://github.com/theohlc/toxic-players
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Execute 
 
-* System dependencies
+    $ bundle install
 
-* Configuration
+and then
 
-* Database creation
+    $ rails db:migrate
 
-* Database initialization
+In the root directory
 
-* How to run the test suite
+## Use
 
-* Services (job queues, cache servers, search engines, etc.)
+Execute
 
-* Deployment instructions
+    $ rails s
 
-* ...
+In the console to start the rails server. Then go to the frontend readme and follow the directions there.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
