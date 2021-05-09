@@ -26,11 +26,13 @@ class PlayersController < ApplicationController
 
   # PATCH/PUT /players/1
   def update
-    if @player.update(player_params)
-      render json: @player
-    else
-      render json: @player.errors, status: :unprocessable_entity
+    if params[:toxic_vote] == true 
+      @player.score += 1
+    elsif params[:toxic_vote] == false 
+      @player.score -= 1
     end
+
+    @player.save
   end
 
   # DELETE /players/1
